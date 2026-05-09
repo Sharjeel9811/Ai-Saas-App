@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.61.3",
+    "@imgly/background-removal": "^1.7.0",
     "@tailwindcss/vite": "^4.2.1",
+    "framer-motion": "^12.38.0",
     "lucide-react": "^0.575.0",
+    "mammoth": "^1.12.0",
+    "pdfjs-dist": "^5.7.284",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.13.1",

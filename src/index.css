@@ -3,10 +3,23 @@
 
 @import "tailwindcss";
 
+:root {
+  --app-bg: #ffffff;
+  --app-text: #0f172a;
+  --color-primary: #5044E5;
+}
+
 *{
     font-family: "Outfit", sans-serif;
 }
 
-@theme{
-  --color-primary:#5044E5;
+html,
+body,
+#root {
+    background: var(--app-bg);
+    color: var(--app-text);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+    transition: background-color 300ms ease, color 300ms ease;
 }

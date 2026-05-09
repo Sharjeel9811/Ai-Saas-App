@@ -40,7 +40,7 @@ const SideBar = ({sidebar}) => {
   };
 
   return (
-    <div className={`w-56 bg-white flex flex-col ${sidebar?'translate-x-0':'-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out border-r border-gray-200 h-full z-50 md:z-auto`}>
+    <div className={`w-56 max-w-[85vw] flex flex-col ${sidebar?'translate-x-0':'-translate-x-full'} md:translate-x-0 transition-transform duration-300 ease-in-out h-full z-50 md:z-auto bg-white border-r border-gray-200 overflow-y-auto`}>
 
       <div className='w-full flex flex-col justify-between h-full px-4 py-3'>
         <div>
@@ -63,13 +63,13 @@ const SideBar = ({sidebar}) => {
                 }`}
               >
                 <span className='w-5 h-5 shrink-0'>{item.icon}</span>
-                <span className='text-sm font-medium'>{item.label}</span>
+                <span className='text-sm font-medium truncate'>{item.label}</span>
               </Link>
             ))}
           </nav>
         </div>
 
-        <div className='border-t border-gray-200 pt-2.5 pb-1 space-y-1.5'>
+        <div className='pt-2.5 pb-1 space-y-1.5 border-t border-gray-200'>
 
 
           <button
