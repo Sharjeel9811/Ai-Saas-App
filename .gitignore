@@ -12,11 +12,32 @@ dist
 dist-ssr
 *.local
 
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Caches and test artifacts
+.vite
+.cache
+coverage
+.nyc_output
+playwright-report
+test-results
+
+# Misc local files
+tmp
+temp
+*.tmp
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
